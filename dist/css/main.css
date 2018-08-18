@@ -1,2 +1,63 @@
+* {
+  box-sizing: border-box; }
+
 body {
-  background: yellowgreen; }
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
+  line-height: 1.5;
+  background: #444;
+  color: #f4f4f4; }
+  body#bg-img {
+    background: url(../img/code-img.jpeg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(68, 68, 68, 0.8);
+      z-index: -1; }
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading {
+    font-size: 5rem; }
+    h1.lg-heading span,
+    h2.lg-heading span {
+      color: darkorange; }
+  h1.sm-heading,
+  h2.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+main {
+  padding: 5rem;
+  height: 100%; }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.5rem; }
+      main .icons a:hover {
+        color: darkorange;
+        transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
