@@ -20,6 +20,77 @@
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(6.3px, -6.3px); }
 
+.menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-brand, .menu-nav {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: rgba(53, 53, 53, 0.9);
+    list-style: none;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-brand {
+    margin: 0;
+    padding: 0;
+    background: rgba(68, 68, 68, 0.9);
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-brand.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-brand .picture {
+      width: 250px;
+      height: 250px;
+      background: url("../img/") no-repeat;
+      border-radius: 50%;
+      border: 2px solid #e8a603; }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.5s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .nav-item.current > a {
+      color: #e8a603; }
+  .menu .nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 1rem 0;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    transition: all 0.5s ease-out; }
+    .menu .nav-link:hover {
+      color: #e8a603; }
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.4s; }
+
 * {
   box-sizing: border-box; }
 
@@ -53,7 +124,7 @@ h2 {
     font-size: 5rem; }
     h1.lg-heading span,
     h2.lg-heading span {
-      color: darkorange; }
+      color: #e8a603; }
   h1.sm-heading,
   h2.sm-heading {
     margin-bottom: 2rem;
@@ -77,7 +148,7 @@ main {
     main .icons a {
       padding: 0.5rem; }
       main .icons a:hover {
-        color: darkorange;
+        color: #e8a603;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
