@@ -56,7 +56,7 @@
     .menu-brand .picture {
       width: 250px;
       height: 250px;
-      background: url("../img/") no-repeat;
+      background: url("../img/cobra.jpg") no-repeat 25%;
       border-radius: 50%;
       border: 2px solid #e8a603; }
   .menu .nav-item {
@@ -102,9 +102,9 @@ body {
   background: #444;
   color: #fff; }
   body#bg-img {
-    background: url(../img/code-img.jpeg);
+    background: url(../img/backGimg.jpeg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: contain no-repeat; }
     body#bg-img:after {
       content: '';
       position: absolute;
@@ -180,6 +180,33 @@ main {
   .bio-info .job-3 {
     grid-area: job3; }
 
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem; }
+  .work img {
+    width: 100%;
+    border: 2px solid #fff; }
+    .work img:hover {
+      opacity: 0.5;
+      border-color: #e8a603;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #e8a603;
+    color: #000; }
+
+.btn-dark {
+  background: black; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #000; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -197,7 +224,7 @@ main {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem; }
-  .projects {
+  #projects .work {
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
@@ -227,4 +254,10 @@ main {
       font-size: 25px; }
   .bio-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .work {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (min-width: 1181px) {
+  .work {
+    grid-template-columns: repeat(4, 1fr); } }
