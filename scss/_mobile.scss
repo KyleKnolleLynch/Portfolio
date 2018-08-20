@@ -1,0 +1,53 @@
+@include mediaSm {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+}
+
+@include mediaMd {
+  main {
+    text-align: center;
+    align-items: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-brand {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-brand {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .picture {
+     transform: scale(0.6);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    
+    .nav-link {
+      font-size:25px;
+    }
+}
+
+@include mediaLg {
+}
+
+@include mediaXl {
+}
+
+}
