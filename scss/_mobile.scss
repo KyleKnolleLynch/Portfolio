@@ -31,23 +31,23 @@
     transform: translate3d(100%, 0, 0);
 
     .picture {
-     transform: scale(0.6);
+      transform: scale(0.6);
     }
   }
 
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    
+
     .nav-link {
-      font-size:25px;
+      font-size: 25px;
     }
+  }
 }
 
-@include mediaLg {
-}
+  @include mediaLg {
+  }
 
-@include mediaXl {
-}
+  @include mediaXl {
+  }
 
-}
