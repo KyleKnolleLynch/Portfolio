@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 * {
   box-sizing: border-box;
@@ -13,7 +12,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
   line-height: 1.5;
   background: $primary-color;
-  color: #f4f4f4;
+  color: set-text-color($primary-color);
 }
 
 h1,
@@ -37,7 +36,7 @@ h2 {
 }
 
 a {
-  color: #fff;
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
@@ -49,7 +48,7 @@ header {
 
 main {
   padding: 5rem;
-  height: 100%;
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -71,3 +70,52 @@ main {
     }
   }
 }
+
+.bio-info {
+  display: grid;
+  grid-template-areas:
+    'bioimage bio bio'
+    'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  .bio-img {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid $secondary-color;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.4rem;
+  }
+
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: 4px solid $secondary-color;
+  }
+
+  .job-1 {
+    grid-area: job1;
+  }
+
+  .job-2 {
+    grid-area: job2;
+  }
+
+  .job-3 {
+    grid-area: job3;
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 8);
+  height: 60px;
+  color: set-text-color($primary-color);
+}
+
+@import 'mobile';

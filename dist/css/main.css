@@ -91,36 +91,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
-
-@media screen and (max-width: 768px) {
-  main {
-    text-align: center;
-    align-items: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-brand {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-brand.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-brand {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-brand .picture {
-      transform: scale(0.6); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0); }
-    .menu-nav .nav-link {
-      font-size: 25px; } }
-
 * {
   box-sizing: border-box; }
 
@@ -130,7 +100,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
   line-height: 1.5;
   background: #444;
-  color: #f4f4f4; }
+  color: #fff; }
   body#bg-img {
     background: url(../img/code-img.jpeg);
     background-attachment: fixed;
@@ -173,7 +143,7 @@ header {
 
 main {
   padding: 5rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -185,3 +155,67 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.bio-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem; }
+  .bio-info .bio-img {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid #e8a603; }
+  .bio-info .bio {
+    grid-area: bio;
+    font-size: 1.4rem; }
+  .bio-info .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: 4px solid #e8a603; }
+  .bio-info .job-1 {
+    grid-area: job1; }
+  .bio-info .job-2 {
+    grid-area: job2; }
+  .bio-info .job-3 {
+    grid-area: job3; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #303030;
+  height: 60px;
+  color: #fff; }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
+@media screen and (max-width: 768px) {
+  main {
+    text-align: center;
+    align-items: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-brand {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-brand.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-brand {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-brand .picture {
+      transform: scale(0.6); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0); }
+    .menu-nav .nav-link {
+      font-size: 25px; }
+  .bio-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; } }
