@@ -72,6 +72,7 @@ main {
   }
 }
 
+
 //   about page
 .bio-info {
   display: grid;
@@ -80,6 +81,7 @@ main {
     'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  justify-content: center;
 
   .bio-img {
     grid-area: bioimage;
@@ -130,8 +132,7 @@ main {
   }
 }
 
-
-      //  button styling
+//  button styling
 .btn {
   display: block;
   padding: 0.5rem 1rem;
@@ -154,6 +155,34 @@ main {
   color: #000;
 }
 
+// contact page
+#contact {
+  .contact-boxes {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .box {
+    border: 4px solid #fff;
+    padding: 0.5rem 2rem;
+    margin: auto;
+    font-size: 2rem;
+    span {
+      color: $secondary-color;
+    }
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      padding: 0.2rem 1.5rem;
+      @include easeOut;
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+}
+
 
 #main-footer {
   text-align: center;
@@ -164,4 +193,3 @@ main {
 }
 
 @import 'mobile';
- 
