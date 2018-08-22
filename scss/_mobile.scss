@@ -74,6 +74,10 @@
 
     grid-template-columns: 1fr;
   }
+  #contact
+  .contact-boxes {
+    grid-template-columns: 1fr;
+  }
 }
 
 @include mediaLg {
@@ -81,7 +85,6 @@
 
 @include mediaXl {
   #contact .contact-boxes {
-    grid-template-columns: repeat(3, 1fr);
     margin-top: 8vh;
     .box {
       font-size: 2.5rem;

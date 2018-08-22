@@ -187,6 +187,7 @@ main {
   grid-gap: 2rem; }
   .work img {
     width: 100%;
+    display: block;
     height: 12rem;
     object-fit: cover;
     border: 2px solid #fff; }
@@ -215,7 +216,8 @@ main {
 #contact .contact-boxes {
   display: grid;
   grid-gap: 3rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-content: center; }
 
 #contact .box {
@@ -283,11 +285,12 @@ main {
       font-size: 25px; }
   .bio-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  #contact .contact-boxes {
     grid-template-columns: 1fr; } }
 
 @media screen and (min-width: 1181px) {
   #contact .contact-boxes {
-    grid-template-columns: repeat(3, 1fr);
     margin-top: 8vh; }
     #contact .contact-boxes .box {
       font-size: 2.5rem; } }
