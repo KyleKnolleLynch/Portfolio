@@ -15,15 +15,11 @@
     }
   }
 
-  #projects .work {
-    grid-template-columns: 1fr;
-  }
-  #contact
-  .box {
+  #contact .box {
     font-size: 1.5rem;
-    padding:0.2 0;
+    padding: 0.2rem 1rem;
     &:hover {
-      padding: 0.1 0;
+      padding: 0.1rem 0.7rem;
     }
   }
 }
@@ -78,20 +74,17 @@
 
     grid-template-columns: 1fr;
   }
-
-  .work {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @include mediaLg {
-  .contact-boxes {
-   
-  }
 }
 
 @include mediaXl {
-  .work {
-    grid-template-columns: repeat(4, 1fr);
+  #contact .contact-boxes {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 8vh;
+    .box {
+      font-size: 2.5rem;
+    }
   }
 }

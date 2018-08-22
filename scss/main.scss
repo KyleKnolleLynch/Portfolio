@@ -72,7 +72,6 @@ main {
   }
 }
 
-
 //   about page
 .bio-info {
   display: grid;
@@ -117,11 +116,13 @@ main {
 //  my projects page
 .work {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-gap: 2rem;
 
   img {
     width: 100%;
+    height: 12rem;
+    object-fit: cover;
     border: 2px solid set-text-color($primary-color);
 
     &:hover {
@@ -129,6 +130,9 @@ main {
       border-color: $secondary-color;
       @include easeOut;
     }
+  }
+  .item {
+    line-break: none;
   }
 }
 
@@ -166,8 +170,9 @@ main {
   .box {
     border: 4px solid #fff;
     padding: 0.5rem 2rem;
-    margin: auto;
+    margin: 2rem auto 0 auto;
     font-size: 2rem;
+
     span {
       color: $secondary-color;
     }
@@ -182,7 +187,6 @@ main {
     }
   }
 }
-
 
 #main-footer {
   text-align: center;
