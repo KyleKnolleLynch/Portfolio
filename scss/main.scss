@@ -108,6 +108,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   grid-gap: 2rem;
+  text-align: center;
 
   img {
     width: 100%;
@@ -122,9 +123,7 @@ main {
       @include easeOut;
     }
   }
-  .item {
-    line-break: none;
-  }
+
 }
 
 //  button styling
