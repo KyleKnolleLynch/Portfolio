@@ -15,6 +15,12 @@
     }
   }
 
+  .bio-img img {
+    transform:scale(0.8);
+    margin: -0.5rem;
+  }
+  
+
   #contact .box {
     font-size: 1.5rem;
     padding: 0.2rem 1rem;
@@ -64,18 +70,12 @@
     }
   }
 
-  .bio-info {
-    grid-template-areas:
-      'bioimage'
-      'bio'
-      'job1'
-      'job2'
-      'job3';
 
+  .bio-info {
     grid-template-columns: 1fr;
   }
-  #contact
-  .contact-boxes {
+
+  #contact .contact-boxes {
     grid-template-columns: 1fr;
   }
 }

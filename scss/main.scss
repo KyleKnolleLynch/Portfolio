@@ -73,43 +73,33 @@ main {
 }
 
 //   about page
-.bio-info {
-  display: grid;
-  grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  justify-content: center;
-
-  .bio-img {
-    grid-area: bioimage;
-    margin: auto;
+.bio-img {
+  height: 40vh;
+  img {
     border-radius: 50%;
     border: 2px solid $secondary-color;
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    shape-outside: circle();
+    float: left;
   }
-
-  .bio {
-    grid-area: bio;
+  h3 {
     font-size: 1.4rem;
   }
+}
+
+.bio-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
 
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: 4px solid $secondary-color;
-  }
-
-  .job-1 {
-    grid-area: job1;
-  }
-
-  .job-2 {
-    grid-area: job2;
-  }
-
-  .job-3 {
-    grid-area: job3;
   }
 }
 

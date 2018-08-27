@@ -1,8 +1,8 @@
 $primary-color: #444;
-$secondary-color: #e8a603;
+$secondary-color: #1cc4ad;
 $show-home-image: true;
-$home-image: url(../img/backGimg.jpeg);
-$background-opacity: 0.8;
+$home-image: url(../img/bgimg2.jpg);
+$background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -11,10 +11,11 @@ $background-opacity: 0.8;
 @mixin background {
   @if $show-home-image {
     &#bg-img {
-      background: $home-image;
+      background: $home-image no-repeat;
       background-attachment: fixed;
-      background-size: cover no-repeat;
-
+      background-size: fill;
+      background-position: 25%;
+      
       &:after {
         content: '';
         position: absolute;
