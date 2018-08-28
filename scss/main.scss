@@ -95,11 +95,26 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   text-align: center;
+  justify-items: center;
+  margin: 4vh auto 0 auto;
 
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: 4px solid $secondary-color;
+  }
+}
+
+.dev-icons {
+  display: inline-flex;
+  width: 100%;
+  margin: 0.5rem 1rem;
+  justify-content: space-evenly;
+  img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    max-height: 4rem;
   }
 }
 
@@ -123,7 +138,6 @@ main {
       @include easeOut;
     }
   }
-
 }
 
 //  button styling

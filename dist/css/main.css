@@ -177,11 +177,24 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  text-align: center; }
+  text-align: center;
+  justify-items: center;
+  margin: 4vh auto 0 auto; }
   .bio-info .job {
     background: #515151;
     padding: 0.5rem;
     border-bottom: 4px solid #1cc4ad; }
+
+.dev-icons {
+  display: inline-flex;
+  width: 100%;
+  margin: 0.5rem 1rem;
+  justify-content: space-evenly; }
+  .dev-icons img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    max-height: 4rem; }
 
 .work {
   display: grid;
