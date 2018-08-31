@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "predeploy": "npm run sass",
     "deploy": "gh-pages -d dist"
   },
   "author": "Kyle Lynch",
