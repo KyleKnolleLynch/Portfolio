@@ -74,7 +74,9 @@ main {
 
 //   about page
 .bio-img {
-  height: 40vh;
+  height: 50vh;
+  width: 75vw;
+
   img {
     border-radius: 50%;
     border: 2px solid $secondary-color;
@@ -95,8 +97,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   text-align: center;
-  justify-items: center;
-  margin: 4vh auto 0 auto;
+  margin: 0 auto;
 
   .job {
     background: lighten($primary-color, 5);
@@ -106,10 +107,9 @@ main {
 }
 
 .dev-icons {
-  display: inline-flex;
-  width: 100%;
-  margin: 0.5rem 1rem;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(4rem, 1fr));
+  margin: 0.5rem auto;
   img {
     width: 100%;
     display: block;
@@ -169,7 +169,6 @@ main {
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
   }
   .box {

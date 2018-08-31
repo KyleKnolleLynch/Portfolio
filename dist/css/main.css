@@ -56,7 +56,7 @@
     .menu-brand .picture {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg") no-repeat;
+      background: url("../img/portrait3.jpg") no-repeat;
       background-size: cover;
       background-position: bottom;
       border-radius: 50%;
@@ -160,7 +160,8 @@ main {
       margin-top: 20vh; }
 
 .bio-img {
-  height: 40vh; }
+  height: 50vh;
+  width: 75vw; }
   .bio-img img {
     border-radius: 50%;
     border: 2px solid #1cc4ad;
@@ -178,18 +179,16 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   text-align: center;
-  justify-items: center;
-  margin: 4vh auto 0 auto; }
+  margin: 0 auto; }
   .bio-info .job {
     background: #515151;
     padding: 0.5rem;
     border-bottom: 4px solid #1cc4ad; }
 
 .dev-icons {
-  display: inline-flex;
-  width: 100%;
-  margin: 0.5rem 1rem;
-  justify-content: space-evenly; }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  margin: 0.5rem auto; }
   .dev-icons img {
     width: 100%;
     display: block;
@@ -231,7 +230,6 @@ main {
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   justify-content: center; }
 
 #contact .box {
@@ -270,6 +268,8 @@ main {
   .bio-img img {
     transform: scale(0.8);
     margin: -0.5rem; }
+  .bio-info {
+    margin-top: 20vh; }
   #contact .box {
     font-size: 1.5rem;
     padding: 0.2rem 1rem; }
