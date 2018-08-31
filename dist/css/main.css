@@ -59,6 +59,7 @@
       background: url("../img/portrait3.jpg") no-repeat;
       background-size: cover;
       background-position: bottom;
+      object-fit: cover;
       border-radius: 50%;
       border: 2px solid #1cc4ad; }
   .menu .nav-item {
@@ -295,7 +296,8 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-brand .picture {
-      transform: scale(0.6); }
+      width: 7rem;
+      height: 7rem; }
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0); }
