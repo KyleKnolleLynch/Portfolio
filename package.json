@@ -11,6 +11,7 @@
   "author": "Kyle Lynch",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.3"
   }
 }
