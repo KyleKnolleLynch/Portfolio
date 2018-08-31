@@ -296,8 +296,8 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-brand .picture {
-      width: 7rem;
-      height: 7rem; }
+      width: 120px;
+      height: 120px; }
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0); }
