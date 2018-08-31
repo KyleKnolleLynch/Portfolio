@@ -5,7 +5,7 @@
   "homepage": "https://kyleknollelynch.github.io/Portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "sass": "node-sass -w scss/ -o dist/css/",
     "predeploy": "npm run sass",
     "deploy": "gh-pages -d dist"
   },
