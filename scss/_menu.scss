@@ -85,6 +85,7 @@
       background: url('../img/portrait3.jpg')no-repeat;
       background-size: cover;
       background-position: bottom;
+      object-fit: cover;
       border-radius: 50%;
       border: 2px solid $secondary-color;
     }
