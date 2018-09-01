@@ -49,7 +49,7 @@ header {
 
 main {
   padding: 5rem;
-  min-height:calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -109,7 +109,7 @@ main {
 
 .dev-icons {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(4rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
   margin: 0.5rem auto;
   img {
     width: 100%;
