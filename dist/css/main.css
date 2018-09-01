@@ -319,4 +319,20 @@ main {
 
 @media screen and (max-height: 400px) {
   .menu-brand .picture {
-    display: none; } }
+    display: none; }
+  .menu .menu-nav .nav-link {
+    font-size: 1.3ch;
+    padding: 0 2rem 2rem 0; }
+  #home {
+    padding: 0 40vw 10vh 0; }
+    #home h1 {
+      font-size: 6ch; }
+    #home h2 {
+      font-size: 2ch; }
+    #home .icons {
+      writing-mode: vertical-rl;
+      position: absolute;
+      top: 0;
+      right: 30vw; }
+      #home .icons a {
+        padding: 0.3rem; } }

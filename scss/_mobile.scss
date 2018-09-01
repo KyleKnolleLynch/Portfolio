@@ -94,8 +94,35 @@
 }
 
 @include mediaVert {
-  .menu-brand 
-   .picture {
-    display:none;
+  .menu-brand .picture {
+    display: none;
   }
+  .menu .menu-nav {
+    
+    .nav-link {
+      font-size: 1.3ch;
+      padding:0 2rem 2rem 0;
+    }
+  }
+
+  #home {
+    padding: 0 40vw 10vh 0;
+    h1 {
+      font-size: 6ch;
+    }
+    h2 {
+      font-size: 2ch;
+    }
+    .icons {
+      writing-mode: vertical-rl;
+      position: absolute;
+      top: 0;
+      right: 30vw;
+      a {
+        padding: 0.3rem;
+      }
+    }
+  }
+ 
+
 }
