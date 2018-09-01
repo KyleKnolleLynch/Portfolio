@@ -22,7 +22,7 @@
 
 .menu {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   visibility: hidden; }
   .menu.show {
@@ -143,11 +143,11 @@ a {
 header {
   position: fixed;
   z-index: 2;
-  width: 100%; }
+  width: 100vw; }
 
 main {
   padding: 5rem;
-  min-height: calc(100vh - 60px); }
+  height: 100vh; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -315,3 +315,7 @@ main {
     margin-top: 8vh; }
     #contact .contact-boxes .box {
       font-size: 2.5rem; } }
+
+@media screen and (max-height: 400px) {
+  .menu-brand .picture {
+    display: none; } }

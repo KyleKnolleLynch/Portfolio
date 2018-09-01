@@ -92,3 +92,10 @@
     }
   }
 }
+
+@include mediaVert {
+  .menu-brand 
+   .picture {
+    display:none;
+  }
+}

@@ -60,3 +60,8 @@ $background-opacity: 0.9;
     @content;
   }
 }
+@mixin mediaVert {
+  @media screen and (max-height: 400px) {
+    @content;
+  }
+}
