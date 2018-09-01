@@ -210,7 +210,10 @@ main {
     .work img:hover {
       opacity: 0.5;
       border-color: #1cc4ad;
+      cursor: auto;
       transition: all 0.5s ease-out; }
+  .work .item:nth-child(1) img {
+    object-fit: initial; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -267,8 +270,7 @@ main {
     main .lg-heading {
       margin-top: 1rem; }
   .bio-img img {
-    transform: scale(0.8);
-    margin: -0.5rem; }
+    transform: scale(0.8); }
   .bio-info {
     margin-top: 15vh; }
   #contact .box {

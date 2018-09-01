@@ -135,8 +135,12 @@ main {
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
+      cursor: auto;
       @include easeOut;
     }
+  }
+  .item:nth-child(1) img {
+    object-fit: initial;
   }
 }
 
