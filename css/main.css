@@ -105,7 +105,7 @@ body {
   background: #444;
   color: #fff; }
   body#bg-img {
-    background: url(../img/bgimg1.jpg) no-repeat;
+    background: url(../img/bgimg2.jpg) no-repeat;
     background-attachment: fixed;
     background-size: fill;
     background-position: 25%; }
