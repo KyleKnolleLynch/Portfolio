@@ -104,6 +104,9 @@ main {
     background: lighten($primary-color, 5);
     padding: 1rem;
     border-bottom: 4px solid $secondary-color;
+    ul {
+      text-align: start;
+    }
   }
 }
 
