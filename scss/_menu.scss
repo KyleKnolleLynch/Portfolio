@@ -82,7 +82,7 @@
     .picture {
       width: 250px;
       height: 250px;
-      background: url('../img/portrait1.jpg')no-repeat;
+      background: url('../img/portrait1.jpg') no-repeat;
       background-size: cover;
       background-position: bottom;
       object-fit: cover;
@@ -111,7 +111,7 @@
     padding: 1rem 0;
     display: inline-block;
     position: relative;
-    color:set-text-color($primary-color);
+    color: set-text-color($primary-color);
     @include easeOut;
 
     &:hover {

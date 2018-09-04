@@ -15,7 +15,7 @@ $background-opacity: 0.9;
       background-attachment: fixed;
       background-size: fill;
       background-position: 25%;
-      
+
       &:after {
         content: '';
         position: absolute;
@@ -63,5 +63,15 @@ $background-opacity: 0.9;
 @mixin mediaVert {
   @media screen and (max-height: 400px) {
     @content;
+  }
+}
+
+// dev-icon rotation
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
   }
 }
