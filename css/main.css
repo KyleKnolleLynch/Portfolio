@@ -192,6 +192,8 @@ main {
     background: #515151;
     padding: 1rem;
     border-bottom: 4px solid #1cc4ad; }
+    .bio-info .job ul {
+      text-align: start; }
 
 .dev-icons {
   display: grid;
