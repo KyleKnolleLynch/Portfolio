@@ -147,8 +147,7 @@ main {
       @include easeOut;
     }
   }
-  .item:nth-child(1) img,
-  .item:nth-child(3) img {
+  .item:nth-child(1) img {
     object-fit: initial;
   }
 }
