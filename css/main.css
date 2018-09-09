@@ -204,7 +204,7 @@ main {
     width: 100%;
     display: block;
     object-fit: contain;
-    max-height: 4rem; }
+    max-height: 3rem; }
   .dev-icons :nth-child(4) {
     -webkit-animation: rotation 6s infinite linear; }
 
@@ -224,7 +224,8 @@ main {
       border-color: #1cc4ad;
       cursor: auto;
       transition: all 0.5s ease-out; }
-  .work .item:nth-child(1) img {
+  .work .item:nth-child(1) img,
+  .work .item:nth-child(3) img {
     object-fit: initial; }
 
 .btn, .btn-dark, .btn-light {
