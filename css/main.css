@@ -197,9 +197,10 @@ main {
       text-align: start; }
 
 .dev-icons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
-  margin: 0.5rem auto; }
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin: 0.5rem auto;
+  width: 100%; }
   .dev-icons img {
     width: 100%;
     display: block;
