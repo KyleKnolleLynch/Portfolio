@@ -152,7 +152,7 @@ header {
   width: 100vw; }
 
 main {
-  padding: 5rem;
+  padding: 3rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
@@ -168,8 +168,9 @@ main {
       margin-top: 20vh; }
 
 .bio-img {
-  height: 50vh;
-  width: 75vw; }
+  height: 30vh;
+  width: 75vw;
+  margin-bottom: 1rem; }
   .bio-img img {
     border-radius: 50%;
     border: 2px solid #1cc4ad;
@@ -279,12 +280,12 @@ main {
     padding: 2rem; }
     main#home h1 {
       margin-top: 10vh; }
-    main .lg-heading {
-      margin-top: 1rem; }
-  .bio-img img {
-    transform: scale(0.8); }
-  .bio-info {
-    margin-top: 25vh; }
+    main .bio-img {
+      margin-top: -2rem; }
+      main .bio-img img {
+        transform: scale(0.8); }
+    main .bio-info {
+      padding-top: 10vh; }
   #contact .box {
     font-size: 1.5rem;
     padding: 0.2rem 1rem; }
