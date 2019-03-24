@@ -10,18 +10,19 @@
       margin-top: 10vh;
     }
 
-    .lg-heading {
-      margin-top: 1rem;
+    .bio-img {
+      margin-top: -2rem;
+      img {
+        transform: scale(0.8);
+      }
+      
+    }
+    .bio-info {
+      padding-top: 10vh;
     }
   }
 
-  .bio-img img {
-    transform: scale(0.8);
-  }
-
-  .bio-info {
-    margin-top: 25vh;
-  }
+ 
 
   #contact .box {
     font-size: 1.5rem;

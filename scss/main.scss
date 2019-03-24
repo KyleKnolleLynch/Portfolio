@@ -48,7 +48,7 @@ header {
 }
 
 main {
-  padding: 5rem;
+  padding: 3rem;
   min-height: calc(100vh - 60px);
 
   .icons {
@@ -75,8 +75,9 @@ main {
 
 //   about page
 .bio-img {
-  height: 50vh;
+  height: 30vh;
   width: 75vw;
+  margin-bottom: 1rem;
 
   img {
     border-radius: 50%;
@@ -91,6 +92,7 @@ main {
   h3 {
     font-size: 1.4rem;
   }
+ 
 }
 
 .bio-info {
@@ -99,6 +101,8 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   text-align: center;
   width: 100%;
+  
+  
 
   .job {
     background: lighten($primary-color, 5);
