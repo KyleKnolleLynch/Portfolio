@@ -41,6 +41,7 @@
 
   &.show {
     visibility: visible;
+    border-top: 2px solid $secondary-color;
   }
 
   &-brand,

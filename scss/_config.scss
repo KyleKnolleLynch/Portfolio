@@ -1,5 +1,5 @@
 $primary-color: #444;
-$secondary-color: #1cc4ad;
+$secondary-color: #22ccc4;
 $show-home-image: true;
 $home-image: url(../img/bgimg.jpg);
 $background-opacity: 0.9;
@@ -25,6 +25,7 @@ $background-opacity: 0.9;
         height: 100%;
         background: rgba($primary-color, $background-opacity);
         z-index: -1;
+        overflow: none;
       }
     }
   }
