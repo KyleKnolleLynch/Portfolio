@@ -1,120 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>About Me</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/main.css">
-  <title>About Me</title>
-</head>
-
-<body>
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-    <div class="menu">
-      <div class="menu-brand">
-        <div class="picture"></div>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-item current">
-          <a href="about.html" class="nav-link">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="projects.html" class="nav-link">
-            My Projects
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            Ways to Contact Me
-          </a>
-        </li>
-      </ul>
-    </div>
-  </header>
-
-  <main id='about'>
-    <h1 class="lg-heading">About <span class="secondary-color">Me</span></h1>
-    <h2 class="sm-heading">A few things about me..</h2>
-
-    <div class="bio-img">
-      <img src="img/portrait1.jpg" alt="my_image"><h3>Bio</h3>
-      <p>I am a self-taught web developer mainly focusing on Javascript and the MERN stack. </p>
-    </div>
-
-    <h3>Skills</h3>
-    <div class="grid">
-      <div class="job job-1">
-        <h3>Front End</h3>
-       <ul>
-         <li>HTML & CSS</li>
-         <li>Javascript</li>
-         <li>Making API calls
-           <ul>
-             <li>Fetch</li>
-             <li>XHR</li>
-           </ul>
-         </li>
-         <li>UI Frameworks
-           <ul>
-             <li>Bootstrap</li>
-             <li>Materialize</li>
-             <li>SASS</li>
-           </ul>
-         </li> 
-       </ul>
-      </div>
-
-      <div class="job job-2">
-        <h3>Back End</h3>
-        <p>Familiar with Node.js and MongoDB</p>
-        <ul>
-          <li>Setting up routes</li>
-          <li>Working with database</li>
+      <div class="menu">
+        <div class="menu-brand">
+          <div class="picture"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item current">
+            <a href="about.html" class="nav-link">
+              About Me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">
+              My Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              Ways to Contact Me
+            </a>
+          </li>
         </ul>
       </div>
+    </header>
 
-      <div class="job job-3">
-        <h3>Dev Ops</h3>
-        <ul>
-          <li>Git & Github</li>
-          <li>Setting up and working with SSH keys</li>
-          <li>Focus on A.P.M.</li>
-          <li>Self-managing work-flow</li>
-        </ul>
+    <main id="about">
+      <h1 class="lg-heading">About <span class="secondary-color">Me</span></h1>
+      <h2 class="sm-heading">A few things about me..</h2>
+
+      <div class="bio-img">
+        <img src="img/portrait1.jpg" alt="my_image" />
+        <h3>Bio</h3>
+        <p>
+          I am a self-taught web developer mainly focusing on Javascript and the
+          MERN stack.
+        </p>
       </div>
-    
-  </div>
 
-</main>
+      <h3>Skills</h3>
+      <div class="grid">
+        <div class="job job-1">
+          <h3>Front End</h3>
+          <div>
+            <p><i class="far fa-check-circle"></i> HTML & CSS</p>
+            <p><i class="far fa-check-circle"></i> Javascript</p>
+            <p><i class="far fa-check-circle"></i> 
+              Making API calls
+              <ul>
+                <li>Fetch</li>
+                <li>XHR</li>
+              </ul>
+            </p>
+            <p><i class="far fa-check-circle"></i> 
+              UI Frameworks
+              <ul>
+                <li>Bootstrap</li>
+                <li>Materialize</li>
+                <li>SASS</li>
+              </ul>
+            </p>
+          </div>
+        </div>
 
-  <div class="dev-icons">
-    <img src="img/devIcons/jsicon.png" alt="nodeicon">
-    <img src="img/devIcons/node2.png" alt="nodeicon">
-    <img src="img/devIcons/mongo4.png" alt="mongoicon">
-    <img src="img/devIcons/react.png" alt="reacticon">
-    <img src="img/devIcons/sassicon.png" alt="sassicon">
-    <img src="img/devIcons/htmlicon.png" alt="htmlicon">
-    <img src="img/devIcons/cssicon.png" alt="cssicon">
-  </div>
+        <div class="job job-2">
+          <h3>Back End</h3>
+          <div>
+            <p><i class="far fa-check-circle"></i> Familiar with Node.js and MongoDB</p>
+            <p><i class="far fa-check-circle"></i> Working with database</p>
+          </div>
+        </div>
 
-  <footer id="main-footer">
-    Copyright &copy; 2018
-  </footer>
+        <div class="job job-3">
+          <h3>Dev Ops</h3>
+          <div>
+            <p><i class="far fa-check-circle"></i> Git & Github</p>
+            <p><i class="far fa-check-circle"></i> Focus on A.P.M.</p>
+            <p><span><i class="far fa-check-circle"></i></span> Self-managing work-flow</p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  <script src="js/main.js"></script>
-</body>
+    <div class="dev-icons">
+      <img src="img/devIcons/jsicon.png" alt="nodeicon" />
+      <img src="img/devIcons/node2.png" alt="nodeicon" />
+      <img src="img/devIcons/mongo4.png" alt="mongoicon" />
+      <img src="img/devIcons/react.png" alt="reacticon" />
+      <img src="img/devIcons/sassicon.png" alt="sassicon" />
+      <img src="img/devIcons/htmlicon.png" alt="htmlicon" />
+      <img src="img/devIcons/cssicon.png" alt="cssicon" />
+    </div>
 
+    <footer id="main-footer">
+      Copyright &copy; 2018
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

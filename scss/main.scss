@@ -114,9 +114,17 @@ main {
     background: lighten($primary-color, 5);
     padding: 1rem;
     border-bottom: 4px solid $secondary-color;
-    ul, 
+    h3 {
+      text-align: center;
+    }
     p {
-      text-align: start;
+      margin: 0.5rem 0;
+    }
+    ul {
+      list-style-type: none;
+    } 
+    i {
+      color: $secondary-color;
     }
   
   }

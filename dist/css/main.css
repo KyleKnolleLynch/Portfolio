@@ -199,9 +199,14 @@ main {
     background: #515151;
     padding: 1rem;
     border-bottom: 4px solid #22ccc4; }
-    #about .job ul,
+    #about .job h3 {
+      text-align: center; }
     #about .job p {
-      text-align: start; }
+      margin: 0.5rem 0; }
+    #about .job ul {
+      list-style-type: none; }
+    #about .job i {
+      color: #22ccc4; }
 
 .dev-icons {
   display: grid;
