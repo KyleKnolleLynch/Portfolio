@@ -201,10 +201,9 @@ main {
     border-bottom: 4px solid #22ccc4; }
     #about .job h3 {
       text-align: center; }
-    #about .job p {
-      margin: 0.5rem 0; }
     #about .job ul {
-      list-style-type: none; }
+      list-style-type: none;
+      text-align: left; }
     #about .job i {
       color: #22ccc4; }
 
@@ -262,14 +261,13 @@ main {
   #contact .contact-boxes {
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center; }
+    grid-template-columns: repeat(2, 1fr); }
   #contact .box {
-    border: 4px solid #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
     padding: 0.5rem 2rem;
     margin: 2rem auto 0 auto;
-    font-size: 2rem;
-    align-items: center; }
+    font-size: 2rem; }
     #contact .box span {
       color: #22ccc4; }
     #contact .box:hover {
