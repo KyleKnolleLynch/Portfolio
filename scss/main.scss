@@ -90,7 +90,7 @@ main {
     object-fit: cover;
     shape-outside: circle();
     float: left;
-    margin-right: 0.2rem;
+    margin-right: 0.3rem;
   }
   h3 {
     margin-left: 16rem;
@@ -140,6 +140,7 @@ main {
   :nth-child(4) {
     -webkit-animation: rotation 6s infinite linear;
   }
+  
 }
 
 

@@ -17,14 +17,18 @@
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
+  .menu-btn :nth-child(2) {
+    background: #22ccc4; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
+      transform: rotate(45deg) translate(5px, 5px);
+      background: #22ccc4; }
     .menu-btn.close .btn-line:nth-child(2) {
       background: inherit; }
     .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(6.3px, -6.3px); }
+      transform: rotate(-45deg) translate(6.3px, -6.3px);
+      background: #22ccc4; }
 
 .menu {
   position: fixed;
@@ -184,7 +188,7 @@ main {
       object-fit: cover;
       shape-outside: circle();
       float: left;
-      margin-right: 0.2rem; }
+      margin-right: 0.3rem; }
     #about .bio-img h3 {
       margin-left: 16rem; }
   #about > h3 {
@@ -296,9 +300,14 @@ main {
     main#about .bio-img {
       margin-top: -1rem; }
       main#about .bio-img img {
-        transform: scale(0.8); }
+        transform: scale(0.8);
+        shape-outside: initial;
+        float: none;
+        margin: auto; }
+      main#about .bio-img h3 {
+        margin: auto; }
     main#about > h3 {
-      margin-top: 4rem; }
+      margin: 5rem auto 2rem; }
   #contact .box {
     font-size: 1.5rem;
     padding: 0.2rem 1rem; }
@@ -344,7 +353,11 @@ main {
   .menu-brand .picture {
     display: none; }
   .menu .menu-nav {
-    padding-bottom: 4rem; }
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .menu .menu-nav .nav-item {
+      place-self: center; }
     .menu .menu-nav .nav-link {
       font-size: 1.3ch; }
   #home {
@@ -354,9 +367,6 @@ main {
     #home h2 {
       font-size: 2ch; }
     #home .icons {
-      writing-mode: vertical-rl;
-      position: absolute;
-      top: 0;
-      right: 30vw; }
+      margin: -0.5rem; }
       #home .icons a {
         padding: 0 0 1rem 1.5rem; } }
