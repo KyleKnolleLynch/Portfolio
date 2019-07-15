@@ -15,6 +15,8 @@ $background-opacity: 0.9;
       background-attachment: fixed;
       background-size: fill;
       background-position: 25%;
+      height: 100%;
+      overflow: hidden;
 
       &:after {
         content: '';
@@ -25,7 +27,7 @@ $background-opacity: 0.9;
         height: 100%;
         background: rgba($primary-color, $background-opacity);
         z-index: -1;
-        overflow: none;
+        overflow: hidden;
       }
     }
   }
