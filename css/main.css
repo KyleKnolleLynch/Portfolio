@@ -129,7 +129,7 @@ body {
       height: 100%;
       background: rgba(68, 68, 68, 0.9);
       z-index: -1;
-      overflow: none; }
+      overflow: hidden; }
 
 h1,
 h2 {
@@ -159,7 +159,7 @@ header {
 main {
   padding: 3rem;
   min-height: calc(100vh - 60px);
-  overflow-y: hidden; }
+  overflow: hidden; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -168,7 +168,6 @@ main {
         color: #22ccc4;
         transition: all 0.5s ease-out; }
   main#home {
-    overflow: hidden;
     height: 100vh;
     border-top: 2px solid #22ccc4; }
     main#home h1 {
