@@ -30,7 +30,7 @@
   }
 
   #contact .box {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0.2rem 1rem;
     &:hover {
       padding: 0.1rem 0.7rem;
@@ -77,21 +77,14 @@
       font-size: 25px;
     }
   }
-
-  #contact .contact-boxes {
-    grid-template-columns: 1fr;
-  }
 }
 
 @include mediaLg {
 }
 
 @include mediaXl {
-  #contact .contact-boxes {
-    margin-top: 8vh;
-    .box {
-      font-size: 2.5rem;
-    }
+  #contact .box {
+    font-size: 1.8rem;
   }
 }
 

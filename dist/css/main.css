@@ -266,14 +266,14 @@ main {
   border-top: 2px solid #22ccc4; }
   #contact .contact-boxes {
     display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: 1fr;
+    margin-top: 3rem; }
   #contact .box {
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 5px;
-    padding: 0.5rem 2rem;
-    margin: 2rem auto 0 auto;
-    font-size: 2rem; }
+    padding: 0.5rem 2.5rem;
+    margin: 0 auto 2rem;
+    font-size: 1.5rem; }
     #contact .box span {
       color: #22ccc4; }
     #contact .box:hover {
@@ -311,7 +311,7 @@ main {
     main#about > h3 {
       margin: 5rem auto 2rem; }
   #contact .box {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0.2rem 1rem; }
     #contact .box:hover {
       padding: 0.1rem 0.7rem; } }
@@ -341,15 +341,11 @@ main {
     height: 75vh;
     transform: translate3d(-100%, 0, 0); }
     .menu-nav .nav-link {
-      font-size: 25px; }
-  #contact .contact-boxes {
-    grid-template-columns: 1fr; } }
+      font-size: 25px; } }
 
 @media screen and (min-width: 1181px) {
-  #contact .contact-boxes {
-    margin-top: 8vh; }
-    #contact .contact-boxes .box {
-      font-size: 2.5rem; } }
+  #contact .box {
+    font-size: 1.8rem; } }
 
 @media screen and (max-height: 400px) {
   .menu-brand .picture {
