@@ -119,7 +119,9 @@ body {
     background: url(../img/bgimg.jpg) no-repeat;
     background-attachment: fixed;
     background-size: fill;
-    background-position: 25%; }
+    background-position: 25%;
+    height: 100%;
+    overflow: hidden; }
     body#bg-img:after {
       content: '';
       position: absolute;
