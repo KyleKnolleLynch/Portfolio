@@ -79,35 +79,34 @@ main {
   width: 100%;
   border-top: 2px solid $secondary-color;
 
-.bio-img {
-  word-wrap:break-word;
-  img {
-    border-radius: 50%;
-    border: 2px solid $secondary-color;
-    display: block;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    shape-outside: circle();
-    float: left;
-    margin-right: 0.3rem;
+  .bio-img {
+    word-wrap: break-word;
+    img {
+      border-radius: 50%;
+      border: 2px solid $secondary-color;
+      display: block;
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      shape-outside: circle();
+      float: left;
+      margin-right: 0.3rem;
+    }
+    h3 {
+      margin-left: 16rem;
+    }
   }
-  h3 {
-    margin-left: 16rem;
-  }
-}
-   >  h3 {
+  > h3 {
     margin-top: 12rem;
     text-align: center;
   }
-  
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  grid-gap: 1rem;
-}
-  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-gap: 1rem;
+  }
+
   .job {
     width: 100%;
     background: lighten($primary-color, 5);
@@ -119,13 +118,11 @@ main {
     ul {
       list-style-type: none;
       text-align: left;
-    } 
+    }
     i {
       color: $secondary-color;
     }
-  
   }
-
 }
 .dev-icons {
   display: grid;
@@ -140,9 +137,7 @@ main {
   :nth-child(4) {
     -webkit-animation: rotation 6s infinite linear;
   }
-  
 }
-
 
 //  my projects page
 #projects {
