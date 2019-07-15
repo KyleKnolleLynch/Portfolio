@@ -44,13 +44,12 @@ header {
   position: fixed;
   z-index: 2;
   width: 100vw;
-  overflow: hidden;
 }
 
 main {
   padding: 3rem;
   min-height: calc(100vh - 60px);
-  overflow: hidden;
+  overflow-y: hidden;
 
   .icons {
     margin-top: 1rem;
