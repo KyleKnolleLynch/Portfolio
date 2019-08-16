@@ -219,7 +219,7 @@ main {
 .dev-icons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
-  margin: 1rem 0 -3rem; }
+  margin: 2rem 0 -2.5rem; }
   .dev-icons img {
     width: 100%;
     display: block;
@@ -313,23 +313,25 @@ main {
   .menu-btn {
     top: 1.8rem;
     right: 2.8rem; }
-  main {
+  #about {
     padding: 2rem; }
-    main#home h1 {
-      margin-top: 10vh; }
-    main#about .bio-img {
+    #about h1 {
+      margin-top: 2vh; }
+    #about .bio-img {
       margin-top: -1rem; }
-      main#about .bio-img img {
+      #about .bio-img img {
         transform: scale(0.8);
         shape-outside: initial;
         float: none;
         margin: auto; }
-      main#about .bio-img h3 {
+      #about .bio-img h3 {
         margin: auto; }
-    main#about > h3 {
+    #about > h3 {
       margin: 5rem auto 2rem; }
+    #about .dev-icons {
+      margin: 1.5rem 0 -1.5rem; }
   #contact .contact-boxes {
-    margin-top: 2rem; }
+    margin: 0; }
   #contact .box {
     font-size: 1.3rem;
     padding: 0.2rem 1rem; }

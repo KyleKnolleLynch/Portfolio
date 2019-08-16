@@ -17,35 +17,37 @@
     top: 1.8rem;
     right: 2.8rem;
   }
-  main {
+
+  #about {
     padding: 2rem;
 
-    &#home h1 {
-      margin-top: 10vh;
+    h1 {
+      margin-top: 2vh;
     }
 
-    &#about {
-      .bio-img {
-        margin-top: -1rem;
-        img {
-          transform: scale(0.8);
-          shape-outside: initial;
-          float: none;
-          margin: auto;
-        }
-        h3 {
-          margin: auto;
-        }
+    .bio-img {
+      margin-top: -1rem;
+      img {
+        transform: scale(0.8);
+        shape-outside: initial;
+        float: none;
+        margin: auto;
       }
-      > h3 {
-        margin: 5rem auto 2rem;
+      h3 {
+        margin: auto;
       }
+    }
+    > h3 {
+      margin: 5rem auto 2rem;
+    }
+    .dev-icons {
+      margin: 1.5rem 0 -1.5rem;
     }
   }
 
   #contact {
     .contact-boxes {
-      margin-top: 2rem;
+      margin: 0;
     }
     .box {
       font-size: 1.3rem;
@@ -99,9 +101,6 @@
 }
 
 @include mediaLg {
-}
-
-@include mediaXl {
   #contact .box {
     font-size: 1.8rem;
   }
