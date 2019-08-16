@@ -114,7 +114,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
   line-height: 1.5;
   background: #444;
-  color: #fff; }
+  color: #fff;
+  border-top: 2px solid #22ccc4; }
   body#bg-img {
     background: url(../img/bgimg.jpg) no-repeat;
     background-attachment: fixed;
@@ -159,9 +160,11 @@ header {
   width: 100vw; }
 
 main {
-  padding: 3rem;
   min-height: calc(100vh - 60px);
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 1600px;
+  margin: auto;
+  padding: 3rem; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -170,53 +173,53 @@ main {
         color: #22ccc4;
         transition: all 0.5s ease-out; }
   main#home {
-    height: 100vh;
-    border-top: 2px solid #22ccc4; }
+    height: 100vh; }
     main#home h1 {
       margin-top: 20vh; }
 
-#about {
-  height: 100%;
+#about .bio-img {
+  word-wrap: break-word;
+  max-width: 1100px;
+  margin: auto; }
+  #about .bio-img img {
+    border-radius: 50%;
+    border: 2px solid #22ccc4;
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    shape-outside: circle();
+    float: left;
+    margin-right: 0.3rem; }
+  #about .bio-img h3 {
+    margin-left: 16rem; }
+
+#about > h3 {
+  margin-top: 12rem;
+  text-align: center; }
+
+#about .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 20rem));
+  grid-gap: 1rem;
+  justify-content: center; }
+
+#about .job {
   width: 100%;
-  border-top: 2px solid #22ccc4; }
-  #about .bio-img {
-    word-wrap: break-word; }
-    #about .bio-img img {
-      border-radius: 50%;
-      border: 2px solid #22ccc4;
-      display: block;
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      shape-outside: circle();
-      float: left;
-      margin-right: 0.3rem; }
-    #about .bio-img h3 {
-      margin-left: 16rem; }
-  #about > h3 {
-    margin-top: 12rem;
+  background: #515151;
+  border-bottom: 4px solid #22ccc4; }
+  #about .job h3 {
     text-align: center; }
-  #about .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    grid-gap: 1rem; }
-  #about .job {
-    width: 100%;
-    background: #515151;
-    padding: 1rem;
-    border-bottom: 4px solid #22ccc4; }
-    #about .job h3 {
-      text-align: center; }
-    #about .job ul {
-      list-style-type: none;
-      text-align: left; }
-    #about .job i {
-      color: #22ccc4; }
+  #about .job ul {
+    list-style-type: none;
+    text-align: left; }
+  #about .job i {
+    color: #22ccc4; }
 
 .dev-icons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
-  margin: 0.5rem auto; }
+  margin: 1rem 0 -3rem; }
   .dev-icons img {
     width: 100%;
     display: block;
@@ -225,15 +228,14 @@ main {
   .dev-icons :nth-child(4) {
     -webkit-animation: rotation 6s infinite linear; }
 
-#projects {
-  border-top: 2px solid #22ccc4; }
-
 .work {
   display: grid;
   grid-template-columns: repeat(auto-fit, 16rem);
   grid-gap: 1.5rem 1rem;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  max-width: 70rem;
+  margin: auto; }
   .work img {
     width: 100%;
     display: block;
@@ -253,7 +255,7 @@ main {
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.2rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #22ccc4;
     color: #000; }
@@ -265,33 +267,32 @@ main {
   background: #c4c4c4;
   color: #000; }
 
-#contact {
-  border-top: 2px solid #22ccc4; }
-  #contact .contact-boxes {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 3rem; }
-  #contact .box {
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 0.5rem 2.5rem;
-    margin: 0 auto 2rem;
-    font-size: 1.5rem; }
-    #contact .box span {
-      color: #22ccc4; }
-    #contact .box:hover {
-      background: #22ccc4;
-      color: #000;
-      padding: 0.2rem 1.5rem;
-      transition: all 0.5s ease-out; }
-      #contact .box:hover span {
-        color: #000; }
+#contact .contact-boxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 3rem; }
+
+#contact .box {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.5rem 2.5rem;
+  margin: 0 auto 2rem;
+  font-size: 1.5rem; }
+  #contact .box span {
+    color: #22ccc4; }
+  #contact .box:hover {
+    background: #22ccc4;
+    color: #000;
+    padding: 0.2rem 1.5rem;
+    transition: all 0.5s ease-out; }
+    #contact .box:hover span {
+      color: #000; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: #303030;
-  height: 60px;
+  height: 58px;
   color: #fff; }
 
 @media screen and (max-width: 500px) {

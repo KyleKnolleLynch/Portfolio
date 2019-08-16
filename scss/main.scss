@@ -14,6 +14,7 @@ body {
   line-height: 1.5;
   background: $primary-color;
   color: set-text-color($primary-color);
+  border-top: 2px solid $secondary-color;
 }
 
 h1,
@@ -47,9 +48,11 @@ header {
 }
 
 main {
-  padding: 3rem;
   min-height: calc(100vh - 60px);
   overflow: hidden;
+  max-width: 1600px;
+  margin: auto;
+  padding: 3rem;
 
   .icons {
     margin-top: 1rem;
@@ -66,7 +69,6 @@ main {
 
   &#home {
     height: 100vh;
-    border-top: 2px solid $secondary-color;
     h1 {
       margin-top: 20vh;
     }
@@ -75,12 +77,12 @@ main {
 
 //   about page
 #about {
-  height: 100%;
-  width: 100%;
-  border-top: 2px solid $secondary-color;
 
   .bio-img {
     word-wrap: break-word;
+    max-width: 1100px;
+    margin: auto;
+
     img {
       border-radius: 50%;
       border: 2px solid $secondary-color;
@@ -103,14 +105,14 @@ main {
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 20rem));
     grid-gap: 1rem;
+    justify-content: center;
   }
 
   .job {
     width: 100%;
     background: lighten($primary-color, 5);
-    padding: 1rem;
     border-bottom: 4px solid $secondary-color;
     h3 {
       text-align: center;
@@ -127,7 +129,7 @@ main {
 .dev-icons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
-  margin: 0.5rem auto;
+  margin: 1rem 0 -3rem;
   img {
     width: 100%;
     display: block;
@@ -140,15 +142,14 @@ main {
 }
 
 //  my projects page
-#projects {
-  border-top: 2px solid $secondary-color;
-}
 .work {
   display: grid;
   grid-template-columns: repeat(auto-fit, 16rem);
   grid-gap: 1.5rem 1rem;
   justify-content: center;
   text-align: center;
+  max-width: 70rem;
+  margin: auto;
 
   img {
     width: 100%;
@@ -177,7 +178,7 @@ main {
 .btn {
   display: block;
   padding: 0.5rem 1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 
   &:hover {
     background: $secondary-color;
@@ -198,7 +199,6 @@ main {
 
 // contact page
 #contact {
-  border-top: 2px solid $secondary-color;
 
   .contact-boxes {
     display: grid;
@@ -231,7 +231,7 @@ main {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 8);
-  height: 60px;
+  height: 58px;
   color: set-text-color($primary-color);
 }
 
