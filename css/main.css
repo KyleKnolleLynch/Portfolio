@@ -296,6 +296,9 @@ main {
   color: #fff; }
 
 @media screen and (max-width: 500px) {
+  html {
+    height: 100vh;
+    min-height: 120%; }
   #about h1.lg-heading,
   #about h2.lg-heading,
   #projects h1.lg-heading,
@@ -331,7 +334,7 @@ main {
     #about .dev-icons {
       margin: 1.5rem 0 -1.5rem; }
   #contact .contact-boxes {
-    margin: 0; }
+    margin-top: -1rem; }
   #contact .box {
     font-size: 1.3rem;
     padding: 0.2rem 1rem;
