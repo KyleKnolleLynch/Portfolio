@@ -1,7 +1,6 @@
 @include mediaSm {
-  html {
-    height: 100vh;
-    min-height: 120%;
+  #home {
+    margin-top: -10vh;
   }
 
   #about,
@@ -52,7 +51,7 @@
 
   #contact {
     .contact-boxes {
-      margin-top: -1rem;
+      margin: -1rem 0 -60px;
     }
     .box {
       font-size: 1.3rem;
