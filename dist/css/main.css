@@ -334,7 +334,8 @@ main {
     margin: 0; }
   #contact .box {
     font-size: 1.3rem;
-    padding: 0.2rem 1rem; }
+    padding: 0.2rem 1rem;
+    margin-bottom: 1rem; }
     #contact .box:hover {
       padding: 0.1rem 0.7rem; } }
 
