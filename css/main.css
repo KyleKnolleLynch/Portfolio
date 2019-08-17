@@ -296,8 +296,8 @@ main {
   color: #fff; }
 
 @media screen and (max-width: 500px) {
-  #home {
-    margin-top: -10vh; }
+  #home .lg-heading {
+    margin-top: 10vh; }
   #about h1.lg-heading,
   #about h2.lg-heading,
   #projects h1.lg-heading,
