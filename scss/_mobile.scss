@@ -1,6 +1,8 @@
 @include mediaSm {
   #home {
-    margin-top: -10vh;
+    .lg-heading {
+      margin-top: 10vh;
+    }
   }
 
   #about,
